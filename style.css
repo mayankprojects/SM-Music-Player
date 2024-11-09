@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(bg.jpg) no-repeat center center/cover fixed;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 66px;
+}
+
+.logo {
+  margin: 8px 49px;
+  cursor: pointer;
+}
+nav {
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 111px;
+}
+
+nav ul li {
+  padding: 4px 21px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  position: relative;
+}
+
+.box {
+  height: 533px;
+  width: 568px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.song {
+  /* border: 2px solid red; */
+  width: 450px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+
+.song img {
+  height: 40px;
+  width: 40px;
+  border-radius: 13px;
+}
+.songname, .time, .num
+{
+  font-size: 25px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+
+
+
+.bottom {
+  position: sticky;
+  bottom: 0px;
+  background-color: black;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#myProgressBar {
+  width: 80vw;
+  margin-top: 18px;
+}
+
+.icons {
+  color: white;
+}
+
+.icons i {
+  padding: 10px;
+}
+
